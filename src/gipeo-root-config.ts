@@ -18,9 +18,15 @@ registerApplication({
 registerApplication({
   name: "@gipeo/mf-persona",
   app: () => System.import<LifeCycles>("@gipeo/mf-persona"),
-  activeWhen: ["/"]
+  activeWhen: ["/mf-persona"]
 });
 
+//rol
+registerApplication({
+  name: "@gipeo/mf-rol",
+  app: () => System.import<LifeCycles>("@gipeo/mf-rol"),
+  activeWhen: ["/mf-rol"]
+});
 
 
 start({
